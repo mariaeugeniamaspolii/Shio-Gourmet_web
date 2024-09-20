@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/myjs.js"></script>
+  <link rel="icon" href="assets/logo shio white.svg">
+  <title>Recetas</title>
+</head>
+
+<body class="mt-0">
+
+  <!--Header-->
+  <header class="header desktop">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-end mt-4 py-3 container-nav container rounded-pill bg-primary-4">
+      <div class=" container-xl">
+        <a href="index.html">
+          <img src="assets/logo shio white.svg" alt="SHIO" class="navbar-brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+          <ul class="navbar-nav mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link px-4" href="productos.html">productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="nosotros.html">nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 active" href="recetas.html">recetas</a>
+            </li>
+          </ul>
+          <a class="nav-link ps-4 p-0" href="comprar.html">
+            <button type="button" class="navbtn btn bg-white text-primary-4 px-5 rounded-pill text-uppercase"
+              data-mdb-ripple-color="#ffffff">comprar</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--/Header-->
+
+  <!--Header-->
+  <header class="header tablet-mobile">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-end mt-4 py-3 container-nav container bg-primary-4">
+      <div class=" container-xl">
+        <a href="index.html">
+          <img src="assets/logo shio white.svg" alt="SHIO" class="navbar-brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+          <ul class="navbar-nav mt-4 text-center">
+            <li class="nav-item">
+              <a class="nav-link px-4" href="productos.html">productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="nosotros.html">nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 active" href="recetas.html">recetas</a>
+            </li>
+            <a class="nav-link" href="comprar.html">
+              <button type="button" class="navbtn btn bg-white text-primary-4 px-5 rounded-pill text-uppercase"
+                data-mdb-ripple-color="#ffffff">comprar</button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--/Header-->
+
+  <!--Banner-->
+  <section class="banner-image banner-image-recetas w-100 vh-85 d-flex align-items-end">
+    <div class="content container-xl text-center">
+      <h1 class="text-text-1 mb-7">Envianos tu receta!</h1>
+      <button type="button" class="text-white btn-primary-3 btn-lg px-4 btn-full rounded-pill my-6 float-end"
+        data-bs-toggle="modal" data-bs-target="#recetaEnviarModal">Enviar receta</button>
+    </div>
+  </section>
+  <!--/Banner-->
+
+
+  <!--Receta de la semana-->
+  <section class="section destacado g-0">
+    <div class=" container-xl p-4">
+      <h3 class="title">Receta de la semana</h3>
+      <h5 class="mb-4 tablet-mobile">Pollo al horno con papas y romero</h5>
+    </div>
+    <img class="tablet-mobile" src="assets/imgs/chicken 2.jpg" alt="">
+    <div class=" container-xl p-4">
+      <div class="tablet-mobile position-relative">
+        <img src="assets/imgs/sales/AZUL.png" alt="sal" id="" class="position-absolute sal-receta-semana-mobile img-fluid">
+        <button type="button" class="tablet-mobile text-white btn-primary-2 btn-lg px-4 btn-full rounded-pill mt-4 float-end" data-bs-toggle="modal" data-bs-target="#recetaModal">Ver receta</button>
+      </div>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#recetaModal" class="hover-zoom-parent row">
+        <img src="assets/imgs/chicken 2.jpg" alt="imagen receta" class="col-7 rounded-4 ps-0 desktop"
+          style="height: 20rem;">
+        <div class="col-5 desktop">
+          <div class="bg-primary-2 rounded-4">
+            <img src="assets/imgs/sales/AZUL.png" alt="sal" id="" class=" hover-zoom-child img-fluid position-relative"
+              style="top: 3rem; height: 20rem;">
+          </div>
+        </div>
+        <div class="row pt-4 text-start pe-0 desktop">
+          <div class="col-7">
+            <h5 class="mb-4">Pollo al horno con papas y romero</h5>
+            <div class="row">
+              <div class="col-12">
+                <div class="row align-items-center pe-0">
+                  <div class="col-3">
+                    <i class="bi bi-clock me-2"></i>
+                    <p class="d-inline m-0 col-2">1:20hrs</p>
+                  </div>
+                  <div class="col-8 d-flex align-items-center">
+                    <p class="me-3 m-0 d-inline">Complejidad:</p>
+                    <div class="complejidad p-0 d-inline">
+                      <div class="sal-azul"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 d-flex text-center align-items-end justify-content-center pe-0">
+            <button type="button" class="btn-secundario">Ver receta</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    </div>
+  </section>
+  <!--/Receta de la semana-->
+
+  <!--Recetas-->
+  <div class="container-xl ">
+    <section class="section">
+      <div class="row mb-5 justify-content-between align-items-middle">
+        <div class="col-6 col-sm-4 mb-0">
+          <h3 class="d-inline title">Recetas</h3>
+          <p class="special-text-2">(38)</p>
+        </div>
+        <div class="col-6 col-sm-4 search-container">
+          <input type="search" name="search" id="search" placeholder="Buscar..." class="w-100">
+          <button class="rounded-circle p-1 bg-secondary-1 search-button"><i class="bi bi-search text-white"></i>
+          </button>
+        </div>
+        <div class="col-11 col-lg-4 mt-4 mt-lg-0">
+
+          <form id="app-cover" class="desktop">
+            <div id="select-box">
+              <input type="checkbox" id="options-view-button"
+                class="selectpicker form-select form-select-dropdown mb-3 rounded-pill shadow-sm border-0">
+              <div id="select-button"
+                class="brd selectpicker form-select form-select-dropdown mb-3 rounded-pill shadow-sm border-0">
+                <div id="selected-value">
+                  <span>Sal utilizada</span>
+                </div>
+              </div>
+              <div id="options">
+
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="TodasLasSales">
+                  <input class="s-c bottom" type="radio" name="platform" value="TodasLasSales">
+                  <i class=""></i>
+                  <span class="label">Todas las sales</span>
+                  <span class="opt-val">Todas las sales</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="Sal de cebolla y ajo">
+                  <input class="s-c bottom" type="radio" name="platform" value="Sal de cebolla y ajo">
+                  <i class="icon-sal icon-blanco"></i>
+                  <span class="label">Sal de cebolla y ajo</span>
+                  <span class="opt-val">Sal de cebolla y ajo</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="Sal de pimienta y limón">
+                  <input class="s-c bottom" type="radio" name="platform" value="Sal de pimienta y limón">
+                  <i class="icon-sal icon-amarillo"></i>
+                  <span class="label">Sal de pimienta y limón</span>
+                  <span class="opt-val">Sal de pimienta y limón</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="Sal de mostaza y romero">
+                  <input class="s-c bottom" type="radio" name="platform" value="Sal de mostaza y romero">
+                  <i class="icon-sal icon-azul"></i>
+                  <span class="label">Sal de mostaza y romero</span>
+                  <span class="opt-val">Sal de mostaza y romero</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="Sal de pimentón ahumado">
+                  <input class="s-c bottom" type="radio" name="platform" value="Sal de pimentón ahumado">
+                  <i class="icon-sal icon-rojo"></i>
+                  <span class="label">Sal de pimentón ahumado</span>
+                  <span class="opt-val">Sal de pimentón ahumado</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de hierbas">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de hierbas">
+                  <i class="icon-sal icon-verde"></i>
+                  <span class="label">sal de hierbas</span>
+                  <span class="opt-val">sal de hierbas</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de curry y sésamo">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de curry y sésamo">
+                  <i class="icon-sal icon-rosado"></i>
+                  <span class="label">sal de curry y sésamo</span>
+                  <span class="opt-val">sal de curry y sésamo</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de jengibre y ajo">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de jengibre y ajo">
+                  <i class="icon-sal icon-celeste"></i>
+                  <span class="label">sal de jengibre y ajo</span>
+                  <span class="opt-val">sal de jengibre y ajo</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de tomate asado">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de tomate asado">
+                  <i class="icon-sal icon-rojo"></i>
+                  <span class="label">sal de tomate asado</span>
+                  <span class="opt-val">sal de tomate asado</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal marina con hongos y trufa">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal marina con hongos y trufa">
+                  <i class="icon-sal icon-gris"></i>
+                  <span class="label">sal marina con hongos y trufa</span>
+                  <span class="opt-val">sal marina con hongos y trufa</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de naranja y hierbas">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de naranja y hierbas">
+                  <i class="icon-sal icon-naranja"></i>
+                  <span class="label">sal de naranja y hierbas</span>
+                  <span class="opt-val">sal de naranja y hierbas</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de hongos y trufa">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de hongos y trufa">
+                  <i class="icon-sal icon-negro"></i>
+                  <span class="label">sal de hongos y trufa</span>
+                  <span class="opt-val">sal de hongos y trufa</span>
+                </div>
+                <div id="option-bg"></div>
+              </div>
+            </div>
+          </form>
+          <form id="app-cover" class="tablet-mobile">
+            <div id="select-box">
+              <input type="checkbox" id="options-view-button"
+                class="selectpicker form-select form-select-dropdown mb-3 rounded-pill shadow-sm border-0">
+              <div id="select-button"
+                class="brd selectpicker form-select form-select-dropdown mb-3 rounded-pill shadow-sm border-0">
+                <div id="selected-value">
+                  <span>Sal utilizada</span>
+                </div>
+              </div>
+              <div id="options" class="tablet-mobile">
+
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="TodasLasSales">
+                  <input class="s-c bottom" type="radio" name="platform" value="TodasLasSales">
+                  <i class=""></i>
+                  <span class="label">Todas las sales</span>
+                  <span class="opt-val">Todas las sales</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="Sal de cebolla y ajo">
+                  <input class="s-c bottom" type="radio" name="platform" value="Sal de cebolla y ajo">
+                  <i class="icon-sal icon-blanco"></i>
+                  <span class="label">Sal de cebolla y ajo</span>
+                  <span class="opt-val">Sal de cebolla y ajo</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="Sal de pimienta y limón">
+                  <input class="s-c bottom" type="radio" name="platform" value="Sal de pimienta y limón">
+                  <i class="icon-sal icon-amarillo"></i>
+                  <span class="label">Sal de pimienta y limón</span>
+                  <span class="opt-val">Sal de pimienta y limón</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="Sal de mostaza y romero">
+                  <input class="s-c bottom" type="radio" name="platform" value="Sal de mostaza y romero">
+                  <i class="icon-sal icon-azul"></i>
+                  <span class="label">Sal de mostaza y romero</span>
+                  <span class="opt-val">Sal de mostaza y romero</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="Sal de pimentón ahumado">
+                  <input class="s-c bottom" type="radio" name="platform" value="Sal de pimentón ahumado">
+                  <i class="icon-sal icon-rojo"></i>
+                  <span class="label">Sal de pimentón ahumado</span>
+                  <span class="opt-val">Sal de pimentón ahumado</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de hierbas">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de hierbas">
+                  <i class="icon-sal icon-verde"></i>
+                  <span class="label">sal de hierbas</span>
+                  <span class="opt-val">sal de hierbas</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de curry y sésamo">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de curry y sésamo">
+                  <i class="icon-sal icon-rosado"></i>
+                  <span class="label">sal de curry y sésamo</span>
+                  <span class="opt-val">sal de curry y sésamo</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de jengibre y ajo">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de jengibre y ajo">
+                  <i class="icon-sal icon-celeste"></i>
+                  <span class="label">sal de jengibre y ajo</span>
+                  <span class="opt-val">sal de jengibre y ajo</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de tomate asado">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de tomate asado">
+                  <i class="icon-sal icon-rojo"></i>
+                  <span class="label">sal de tomate asado</span>
+                  <span class="opt-val">sal de tomate asado</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal marina con hongos y trufa">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal marina con hongos y trufa">
+                  <i class="icon-sal icon-gris"></i>
+                  <span class="label">sal marina con hongos y trufa</span>
+                  <span class="opt-val">sal marina con hongos y trufa</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de naranja y hierbas">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de naranja y hierbas">
+                  <i class="icon-sal icon-naranja"></i>
+                  <span class="label">sal de naranja y hierbas</span>
+                  <span class="opt-val">sal de naranja y hierbas</span>
+                </div>
+                <div class="option">
+                  <input class="s-c top" type="radio" name="platform" value="sal de hongos y trufa">
+                  <input class="s-c bottom" type="radio" name="platform" value="sal de hongos y trufa">
+                  <i class="icon-sal icon-negro"></i>
+                  <span class="label">sal de hongos y trufa</span>
+                  <span class="opt-val">sal de hongos y trufa</span>
+                </div>
+                <div id="option-bg"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+      <!--Recetas DESKTOP-->
+      <div class="row productos gy-6 desktop">
+
+        <!--RECETA-->
+        <article class="col-6  px-4 "data-bs-toggle="modal" data-bs-target="#recetaModal">
+          <div class="hover-zoom-parent">
+            <div class="row bg-primary-2 rounded-4 position-relative">
+              <img src="assets/imgs/chicken.jpg" alt="" class="col-7 p-0 rounded-4" style="height: 13rem;">
+              <img src="assets/imgs/sales/AZUL.png" alt="" class="position-absolute sal-recetas hover-zoom-child">
+            </div>
+            <div class="row text-start mt-4">
+              <h5 class="col-7 mb-4">Pollo al horno con papas y romero</h5>
+              <p class="m-0 me-5"><i class="bi bi-clock me-2"></i>1:20hrs</p>
+              <div class="row align-items-center pe-0">
+                <p class="col-4 m-0">Complejidad:</p>
+                <div class="complejidad col-3 p-0">
+                  <div class="sal-azul"></div>
+                </div>
+                <div class="col-5 text-center">
+                  <button type="button" class="btn-secundario" >Ver receta</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!--RECETA-->
+
+        <!--RECETA-->
+        <article class="col-6  px-4 "data-bs-toggle="modal" data-bs-target="#recetaModal">
+          <div class="hover-zoom-parent">
+            <div class="row sal-celeste rounded-4 position-relative">
+              <img src="assets/imgs/chicken 3.jpg" alt="" class="col-7 p-0 rounded-4" style="height: 13rem;">
+              <img src="assets/imgs/sales/CELESTE.png" alt="" class="position-absolute sal-recetas hover-zoom-child">
+            </div>
+            <div class="row text-start mt-4">
+              <h5 class="col-7 mb-4">Pollo al horno con papas y romero</h5>
+              <p class="m-0 me-5"><i class="bi bi-clock me-2"></i>1:20hrs</p>
+              <div class="row align-items-center pe-0">
+                <p class="col-4 m-0">Complejidad:</p>
+                <div class="complejidad col-3 p-0">
+                  <div class="sal-celeste"></div>
+                </div>
+                <div class="col-5 text-center">
+                  <button type="button" class="btn-secundario" >Ver receta</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!--RECETA-->
+
+        <!--RECETA-->
+        <article class="col-6  px-4 "data-bs-toggle="modal" data-bs-target="#recetaModal">
+          <div class="hover-zoom-parent">
+            <div class="row sal-rosado rounded-4 position-relative">
+              <img src="assets/imgs/chicken 4.jpg" alt="" class="col-7 p-0 rounded-4" style="height: 13rem;">
+              <img src="assets/imgs/sales/ROSADA.png" alt="" class="position-absolute sal-recetas hover-zoom-child">
+            </div>
+            <div class="row text-start mt-4">
+              <h5 class="col-7 mb-4">Pollo al horno con papas y romero</h5>
+              <p class="m-0 me-5"><i class="bi bi-clock me-2"></i>1:20hrs</p>
+              <div class="row align-items-center pe-0">
+                <p class="col-4 m-0">Complejidad:</p>
+                <div class="complejidad col-3 p-0">
+                  <div class="sal-rosado"></div>
+                </div>
+                <div class="col-5 text-center">
+                  <button type="button" class="btn-secundario" >Ver receta</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!--RECETA-->
+
+        <!--RECETA-->
+        <article class="col-6  px-4 "data-bs-toggle="modal" data-bs-target="#recetaModal">
+          <div class="hover-zoom-parent">
+            <div class="row sal-verde rounded-4 position-relative">
+              <img src="assets/imgs/chicken 2.jpg" alt="" class="col-7 p-0 rounded-4" style="height: 13rem;">
+              <img src="assets/imgs/sales/VERDE.png" alt="" class="position-absolute sal-recetas hover-zoom-child">
+            </div>
+            <div class="row text-start mt-4">
+              <h5 class="col-7 mb-4">Pollo al horno con papas y romero</h5>
+              <p class="m-0 me-5"><i class="bi bi-clock me-2"></i>1:20hrs</p>
+              <div class="row align-items-center pe-0">
+                <p class="col-4 m-0">Complejidad:</p>
+                <div class="complejidad col-3 p-0">
+                  <div class="sal-verde"></div>
+                </div>
+                <div class="col-5 text-center">
+                  <button type="button" class="btn-secundario" >Ver receta</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!--RECETA-->
+
+        <!--RECETA-->
+        <article class="col-6  px-4 "data-bs-toggle="modal" data-bs-target="#recetaModal">
+          <div class="hover-zoom-parent">
+            <div class="row sal-verde rounded-4 position-relative">
+              <img src="assets/imgs/chicken 5.jpg" alt="" class="col-7 p-0 rounded-4" style="height: 13rem;">
+              <img src="assets/imgs/sales/VERDE.png" alt="" class="position-absolute sal-recetas hover-zoom-child">
+            </div>
+            <div class="row text-start mt-4">
+              <h5 class="col-7 mb-4">Pollo al horno con papas y romero</h5>
+              <p class="m-0 me-5"><i class="bi bi-clock me-2"></i>1:20hrs</p>
+              <div class="row align-items-center pe-0">
+                <p class="col-4 m-0">Complejidad:</p>
+                <div class="complejidad col-3 p-0">
+                  <div class="sal-verde"></div>
+                </div>
+                <div class="col-5 text-center">
+                  <button type="button" class="btn-secundario" >Ver receta</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!--RECETA-->
+
+        <!--RECETA-->
+        <article class="col-6  px-4 "data-bs-toggle="modal" data-bs-target="#recetaModal">
+          <div class="hover-zoom-parent">
+            <div class="row sal-amarillo rounded-4 position-relative">
+              <img src="assets/imgs/chicken 3.jpg" alt="" class="col-7 p-0 rounded-4" style="height: 13rem;">
+              <img src="assets/imgs/sales/AMARILLO.png" alt="" class="position-absolute sal-recetas hover-zoom-child">
+            </div>
+            <div class="row text-start mt-4">
+              <h5 class="col-7 mb-4">Pollo al horno con papas y romero</h5>
+              <p class="m-0 me-5"><i class="bi bi-clock me-2"></i>1:20hrs</p>
+              <div class="row align-items-center pe-0">
+                <p class="col-4 m-0">Complejidad:</p>
+                <div class="complejidad col-3 p-0">
+                  <div class="sal-amarillo"></div>
+                </div>
+                <div class="col-5 text-center">
+                  <button type="button" class="btn-secundario" >Ver receta</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!--RECETA-->
+
+        <!--RECETA-->
+        <article class="col-6  px-4 "data-bs-toggle="modal" data-bs-target="#recetaModal">
+          <div class="hover-zoom-parent">
+            <div class="row sal-naranja rounded-4 position-relative">
+              <img src="assets/imgs/chicken 6.jpg" alt="" class="col-7 p-0 rounded-4" style="height: 13rem;">
+              <img src="assets/imgs/sales/NARANJA.png" alt="" class="position-absolute sal-recetas hover-zoom-child">
+            </div>
+            <div class="row text-start mt-4">
+              <h5 class="col-7 mb-4">Pollo al horno con papas y romero</h5>
+              <p class="m-0 me-5"><i class="bi bi-clock me-2"></i>1:20hrs</p>
+              <div class="row align-items-center pe-0">
+                <p class="col-4 m-0">Complejidad:</p>
+                <div class="complejidad col-3 p-0">
+                  <div class="sal-naranja"></div>
+                </div>
+                <div class="col-5 text-center">
+                  <button type="button" class="btn-secundario" >Ver receta</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!--RECETA-->
+
+        <!--RECETA-->
+        <article class="col-6  px-4 "data-bs-toggle="modal" data-bs-target="#recetaModal">
+          <div class="hover-zoom-parent">
+            <div class="row sal-rojo rounded-4 position-relative">
+              <img src="assets/imgs/chicken 4.jpg" alt="" class="col-7 p-0 rounded-4" style="height: 13rem;">
+              <img src="assets/imgs/sales/ROJO F.png" alt="" class="position-absolute sal-recetas hover-zoom-child">
+            </div>
+            <div class="row text-start mt-4">
+              <h5 class="col-7 mb-4">Pollo al horno con papas y romero</h5>
+              <p class="m-0 me-5"><i class="bi bi-clock me-2"></i>1:20hrs</p>
+              <div class="row align-items-center pe-0">
+                <p class="col-4 m-0">Complejidad:</p>
+                <div class="complejidad col-3 p-0">
+                  <div class="sal-rojo"></div>
+                </div>
+                <div class="col-5 text-center">
+                  <button type="button" class="btn-secundario" >Ver receta</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!--RECETA-->
+
+      </div>
+      <!--/Recetas DESKTOP-->
+      
+  
+  
+  <!--Recetas MOBILE-->
+        <div class="row productos gy-4 tablet-mobile">
+
+          <!--RECETA-->
+          <article class="col-12" data-bs-toggle="modal" data-bs-target="#recetaModal"> 
+            <h5 class="mb-4 mb-sm-5">Pollo al horno con papas y romero</h5>
+              <div class="row">
+                
+                <div class="col-2 bg-primary-2 bg-recetas">
+                  <div class="position-relative">
+                    <img src="assets/imgs/chicken.jpg" alt="" class="p-0 rounded-circle img-receta-mobile">
+                    <img src="assets/imgs/sales/AZUL.png" alt="" class=" sal-recetas position-relative">
+                  </div>
+                </div>
+
+                <div class="col-7">
+                  <div class="row align-items-center pe-0">
+                    <div class="col-8">
+                      <i class="bi bi-clock me-2"></i>
+                      <p class="d-inline m-0 col-2">1:20hrs</p>
+                    </div>
+                    <div class="col-12 d-flex align-items-center">
+                      <p class="me-3 m-0 d-inline">Complejidad:</p>
+                      <div class="complejidad p-0 d-inline">
+                        <div class="sal-azul"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1 p-0">
+                  <i class="bi bi-chevron-right text-primary-2"></i>
+                </div>
+              </div>
+            </article>
+            <!--RECETA-->
+            
+            <hr class="mb-0">
+
+          <!--RECETA-->
+          <article class="col-12" data-bs-toggle="modal" data-bs-target="#recetaModal"> 
+
+            <h5 class="mb-4 mb-sm-5">Pollo al horno con papas y romero</h5>
+              <div class="row">
+                
+                <div class="col-2 bg-primary-2 bg-recetas">
+                  <div class="position-relative">
+                    <img src="assets/imgs/chicken.jpg" alt="" class="p-0 rounded-circle img-receta-mobile">
+                    <img src="assets/imgs/sales/AZUL.png" alt="" class=" sal-recetas position-relative">
+                  </div>
+                </div>
+
+                <div class="col-7">
+                  <div class="row align-items-center pe-0">
+                    <div class="col-8">
+                      <i class="bi bi-clock me-2"></i>
+                      <p class="d-inline m-0 col-2">1:20hrs</p>
+                    </div>
+                    <div class="col-12 d-flex align-items-center">
+                      <p class="me-3 m-0 d-inline">Complejidad:</p>
+                      <div class="complejidad p-0 d-inline">
+                        <div class="sal-azul"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1 p-0">
+                  <i class="bi bi-chevron-right text-primary-2"></i>
+                </div>
+              </div>
+            </article>
+            <!--RECETA-->
+            
+            <hr class="mb-0">
+
+          <!--RECETA-->
+          <article class="col-12" data-bs-toggle="modal" data-bs-target="#recetaModal"> 
+
+            <h5 class="mb-4 mb-sm-5">Pollo al horno con papas y romero</h5>
+              <div class="row">
+                
+                <div class="col-2 bg-primary-2 bg-recetas">
+                  <div class="position-relative">
+                    <img src="assets/imgs/chicken.jpg" alt="" class="p-0 rounded-circle img-receta-mobile">
+                    <img src="assets/imgs/sales/AZUL.png" alt="" class=" sal-recetas position-relative">
+                  </div>
+                </div>
+
+                <div class="col-7">
+                  <div class="row align-items-center pe-0">
+                    <div class="col-8">
+                      <i class="bi bi-clock me-2"></i>
+                      <p class="d-inline m-0 col-2">1:20hrs</p>
+                    </div>
+                    <div class="col-12 d-flex align-items-center">
+                      <p class="me-3 m-0 d-inline">Complejidad:</p>
+                      <div class="complejidad p-0 d-inline">
+                        <div class="sal-azul"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1 p-0">
+                  <i class="bi bi-chevron-right text-primary-2"></i>
+                </div>
+              </div>
+            </article>
+            <!--RECETA-->
+            
+            <hr class="mb-0">
+
+          <!--RECETA-->
+          <article class="col-12" data-bs-toggle="modal" data-bs-target="#recetaModal"> 
+
+            <h5 class="mb-4 mb-sm-5">Pollo al horno con papas y romero</h5>
+              <div class="row">
+                
+                <div class="col-2 bg-primary-2 bg-recetas">
+                  <div class="position-relative">
+                    <img src="assets/imgs/chicken.jpg" alt="" class="p-0 rounded-circle img-receta-mobile">
+                    <img src="assets/imgs/sales/AZUL.png" alt="" class=" sal-recetas position-relative">
+                  </div>
+                </div>
+
+                <div class="col-7">
+                  <div class="row align-items-center pe-0">
+                    <div class="col-8">
+                      <i class="bi bi-clock me-2"></i>
+                      <p class="d-inline m-0 col-2">1:20hrs</p>
+                    </div>
+                    <div class="col-12 d-flex align-items-center">
+                      <p class="me-3 m-0 d-inline">Complejidad:</p>
+                      <div class="complejidad p-0 d-inline">
+                        <div class="sal-azul"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1 p-0">
+                  <i class="bi bi-chevron-right text-primary-2"></i>
+                </div>
+              </div>
+            </article>
+            <!--RECETA-->
+            
+            <hr class="mb-0">
+
+          <!--RECETA-->
+          <article class="col-12" data-bs-toggle="modal" data-bs-target="#recetaModal"> 
+
+            <h5 class="mb-4 mb-sm-5">Pollo al horno con papas y romero</h5>
+              <div class="row">
+                
+                <div class="col-2 bg-primary-2 bg-recetas">
+                  <div class="position-relative">
+                    <img src="assets/imgs/chicken.jpg" alt="" class="p-0 rounded-circle img-receta-mobile">
+                    <img src="assets/imgs/sales/AZUL.png" alt="" class=" sal-recetas position-relative">
+                  </div>
+                </div>
+
+                <div class="col-7">
+                  <div class="row align-items-center pe-0">
+                    <div class="col-8">
+                      <i class="bi bi-clock me-2"></i>
+                      <p class="d-inline m-0 col-2">1:20hrs</p>
+                    </div>
+                    <div class="col-12 d-flex align-items-center">
+                      <p class="me-3 m-0 d-inline">Complejidad:</p>
+                      <div class="complejidad p-0 d-inline">
+                        <div class="sal-azul"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1 p-0">
+                  <i class="bi bi-chevron-right text-primary-2"></i>
+                </div>
+              </div>
+            </article>
+            <!--RECETA-->
+            
+
+
+            
+          </div>
+      </section>
+    <!--/Recetas-->
+    
+    <!--/Recetas MOBILE-->
+    
+  </section>
+</div>
+
+
+
+
+  <!--MODALES-->
+
+
+  <!-- Modal Enviar Receta -->
+  <div class="modal fade border-none" id="recetaEnviarModal" tabindex="-1" aria-labelledby="recetaEnviarModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header justify-content-end">
+          <button type="button" class="bg-transparent" data-bs-dismiss="modal" aria-label="Close">cerrar</button>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-title mb-5" id="recetaEnviarModalLabel">Envianos tu receta!</h3>
+          <section class="">
+            <form class="row p-0 justify-content-between" action="enviarReceta" method="post" id="formReceta">
+
+              <article class="col-12 col-lg-8 position-relative">
+
+                <div class="form-group row">
+                  <label for="recetaNombre" class="col-12 col-md-4 col-form-label">Nombre de la receta</label>
+                  <div class="col-12 col-md-8">
+                    <input type="text" name="recetaNombre" id="recetaNombre" class="form-control"
+                      placeholder="Nombre de la receta">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="recetaSalUtilizada" class="col-12 col-md-4 col-form-label">Sal utilizada</label>
+                  <div class="col-12 col-md-8">
+
+                    <div id="app-cover" class="app-cover-enviar">
+                      <div id="select-box">
+                        <input type="checkbox" id="options-view-button"
+                          class="selectpicker form-select form-select-dropdown mb-3 rounded-pill shadow-sm border-0">
+                        <div id="select-button"
+                          class="select-button-enviar brd selectpicker form-select form-select-dropdown mb-3 rounded-pill shadow-sm border-0">
+                          <div id="selected-value">
+                            <span>Sal utilizada</span>
+                          </div>
+                        </div>
+                        <div id="options">
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="TodasLasSales">
+                            <input class="s-c bottom" type="radio" name="platform" value="TodasLasSales">
+                            <span class="label">Todas las sales</span>
+                            <span class="opt-val">Todas las sales</span>
+                          </div>
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="Sal de cebolla y ajo">
+                            <input class="s-c bottom" type="radio" name="platform" value="Sal de cebolla y ajo">
+                            <i class="icon-sal icon-blanco"></i>
+                            <span class="label">Sal de cebolla y ajo</span>
+                            <span class="opt-val">Sal de cebolla y ajo</span>
+                          </div>
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="Sal de pimienta y limón">
+                            <input class="s-c bottom" type="radio" name="platform" value="Sal de pimienta y limón">
+                            <i class="icon-sal icon-amarillo"></i>
+                            <span class="label">Sal de pimienta y limón</span>
+                            <span class="opt-val">Sal de pimienta y limón</span>
+                          </div>
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="Sal de mostaza y romero">
+                            <input class="s-c bottom" type="radio" name="platform" value="Sal de mostaza y romero">
+                            <i class="icon-sal icon-azul"></i>
+                            <span class="label">Sal de mostaza y romero</span>
+                            <span class="opt-val">Sal de mostaza y romero</span>
+                          </div>
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="Sal de pimentón ahumado">
+                            <input class="s-c bottom" type="radio" name="platform" value="Sal de pimentón ahumado">
+                            <i class="icon-sal icon-rojo"></i>
+                            <span class="label">Sal de pimentón ahumado</span>
+                            <span class="opt-val">Sal de pimentón ahumado</span>
+                          </div>
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="sal de hierbas">
+                            <input class="s-c bottom" type="radio" name="platform" value="sal de hierbas">
+                            <i class="icon-sal icon-verde"></i>
+                            <span class="label">sal de hierbas</span>
+                            <span class="opt-val">sal de hierbas</span>
+                          </div>
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="sal de curry y sésamo">
+                            <input class="s-c bottom" type="radio" name="platform" value="sal de curry y sésamo">
+                            <i class="icon-sal icon-rosado"></i>
+                            <span class="label">sal de curry y sésamo</span>
+                            <span class="opt-val">sal de curry y sésamo</span>
+                          </div>
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="sal de jengibre y ajo">
+                            <input class="s-c bottom" type="radio" name="platform" value="sal de jengibre y ajo">
+                            <i class="icon-sal icon-celeste"></i>
+                            <span class="label">sal de jengibre y ajo</span>
+                            <span class="opt-val">sal de jengibre y ajo</span>
+                          </div>
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="sal de tomate asado">
+                            <input class="s-c bottom" type="radio" name="platform" value="sal de tomate asado">
+                            <i class="icon-sal icon-rojo"></i>
+                            <span class="label">sal de tomate asado</span>
+                            <span class="opt-val">sal de tomate asado</span>
+                          </div>
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="sal marina con hongos y trufa">
+                            <input class="s-c bottom" type="radio" name="platform"
+                              value="sal marina con hongos y trufa">
+                            <i class="icon-sal icon-gris"></i>
+                            <span class="label">sal marina con hongos y trufa</span>
+                            <span class="opt-val">sal marina con hongos y trufa</span>
+                          </div>
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="sal de naranja y hierbas">
+                            <input class="s-c bottom" type="radio" name="platform" value="sal de naranja y hierbas">
+                            <i class="icon-sal icon-naranja"></i>
+                            <span class="label">sal de naranja y hierbas</span>
+                            <span class="opt-val">sal de naranja y hierbas</span>
+                          </div>
+                          <div class="option">
+                            <input class="s-c top" type="radio" name="platform" value="sal de hongos y trufa">
+                            <input class="s-c bottom" type="radio" name="platform" value="sal de hongos y trufa">
+                            <i class="icon-sal icon-negro"></i>
+                            <span class="label">sal de hongos y trufa</span>
+                            <span class="opt-val">sal de hongos y trufa</span>
+                          </div>
+                          <div id="option-bg"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="recetaTiempo" class="col-12 col-md-4 col-form-label">Tiempo empleado</label>
+                  <div class="col-12 col-md-8">
+                    <input type="text" name="recetaTiempo" id="recetaTiempo" class="form-control"
+                      placeholder="Tiempo empleado">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="recetaIngredientes" class="col-12 col-md-4 col-form-label">Ingredientes</label>
+                  <div class="col-12 col-md-8">
+                    <input type="text" name="recetaIngredientes" id="recetaIngredientes" class="form-control"
+                      placeholder="Ingredientes">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="recetaPreparacion" class="col-12 col-md-4 col-form-label">Preparación</label>
+                  <div class="col-12 col-md-8 text-end">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="row">
+                          <label for="paso1" class="col-12 col-md-3 col-form-label text-start">Paso 1 -</label>
+                          <div class="col-12 col-md-9">
+                            <textarea name="paso1" id="paso1" rows="2" placeholder="paso 1"
+                              class=" w-100 form-control"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mt-4">
+                        <div class="row">
+                          <label for="paso2" class="col-12 col-md-3 col-form-label text-start">Paso 2 -</label>
+                          <div class="col-12 col-md-9">
+                            <textarea name="paso2" id="paso2" rows="2" placeholder="paso 2"
+                              class=" w-100 form-control"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mt-4">
+                        <div class="row">
+                          <label for="paso3" class="col-12 col-md-3 col-form-label text-start">Paso 3 -</label>
+                          <div class="col-12 col-md-9">
+                            <textarea name="paso3" id="paso3" rows="2" placeholder="paso 3"
+                              class=" w-100 form-control"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn-secundario m-3 me-0 me-lg-3">Agregar paso</button>
+                    <button type="button" class="btn-secundario"><i class="bi bi-trash"></i></button>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="recetaComplejidad" class="col-12 col-md-4 col-form-label">Complejidad</label>
+                  <div class="col-12 col-md-8">
+                    <input type="range" name="recetaComplejidad" id="recetaComplejidad" class="form-control" min="0"
+                      max="60" type="range" value="5">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="recetaEmail" class="col-12 col-md-4 col-form-label">E-mail</label>
+                  <div class="col-12 col-md-8">
+                    <input type="email" name="recetaEmail" id="recetaEmail" class="form-control" placeholder="E-mail">
+                  </div>
+                </div>
+
+              </article>
+
+              <article class="col-12 col-lg-3 position-relative mt-5 mt-lg-0">
+                <label for="recetaImg">Imagen del plato</label>
+                <div class="img-receta-container col-12">
+
+                </div>
+                <input type="file" name="recetaImg" id="recetaImg" class="custom-file-input col-8">
+                <p class="col-12 col-lg-10 special-text-3 text-start">
+                  Ten en cuenta que esta foto aparecerá en la web, selecciona una foto con buena iluminación y que <span
+                    class="bold-text"> mejor represente el plato que preparaste!</span>
+                </p>
+              </article>
+              <article class="submit-container col-12">
+                <input type="submit" value="Enviar receta" class="btn btn-lg bg-primary-3 mt-5">
+              </article>
+            </form>
+          </section>
+
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal Receta -->
+  <div class="modal fade border-none" id="recetaModal" tabindex="-1" aria-labelledby="recetaModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog container-receta">
+      <div class="modal-content">
+        <div class="modal-header justify-content-end">
+          <button type="button" class="bg-transparent" data-bs-dismiss="modal" aria-label="Close">cerrar</button>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-title" id="recetaModalLabel">Pollo al horno con papas y romero</h3>
+          <section class="row p-0 justify-content-between">
+            <article class="col-12 col-lg-7 position-relative">
+              <img src="assets/imgs/chicken 2.jpg" alt="imagen receta" class="rounded-4 col-12 col-lg-11" style="height: 20rem;">
+              <img src="assets/imgs/sales/AZUL.png" alt="sal receta" class="position-absolute"
+                style="height: 20rem; top: 3em; right: -3em;">
+            </article>
+
+            <article class="col-11 col-md-6 col-lg-4">
+              <div class="row text-start mt-6 mt-lg-4">
+                <p class="m-0 mb-2"><i class="bi bi-clock me-2"></i>1:20hrs</p>
+                <div class="row align-items-center justify-content-between pe-0 mb-4">
+                  <p class="me-3 m-0 col-4">Complejidad:</p>
+                  <div class="complejidad col-5 p-0">
+                    <div class="sal-azul"></div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="special-text-1">ingredientes:</p>
+              <ul class="p-0">
+                <li>1 pollo entero o 4 muslos completos</li>
+                <li>4 papas medianas</li>
+                <li>3 cebollas medianas</li>
+                <li>aceite de oliva</li>
+                <li>sal shio de mostaza y romero a gusto</li>
+                <li>romero</li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="row receta-steps-container">
+            <article class="receta-steps-step">
+              <div class="receta-steps bg-primary-2">
+                <p>1</p>
+              </div>
+              <p class="col-10">
+                Comenzamos pelando las patatas. Una vez peladas, las cortamos en rodajas finas, de no más de 1
+                centímetro de grosor. Después, las ponemos como base en una bandeja para horno. Pelamos también las
+                cebollas y las cortamos en tiras finas. La ponemos sobre la patata y salpimentamos.
+              </p>
+            </article>
+
+            <article class="receta-steps-step">
+              <div class="receta-steps bg-primary-2">
+                <p>2</p>
+              </div>
+              <p class="col-10">
+                A continuación ponemos los muslos encima de las patatas y la cebolla. Le añadimos a todo un vaso de agua
+                y un chorrete de aceite de oliva. Así quedará mas jugoso mientras se hornea. Nos aseguramos que en el
+                fondo de la fuente, haya siempre humedad. Así la guarnición no se va a quemar. Salpimentamos y añadimos
+                un buen pellizco de tomillo seco a cada muslo (o al pollo completo, si has elegido la pieza completa).
+              </p>
+            </article>
+
+            <article class="receta-steps-step">
+              <div class="receta-steps bg-primary-2">
+                <p>3</p>
+              </div>
+              <p class="col-10">
+                Metemos el pollo al horno a 220ºC si utilizas muslos. calor arriba y abajo. Dejamos hornear unos 30
+                minutos, hasta que se dore bien. Si utilizas un pollo entero, horneamos a 190ºC.
+              </p>
+            </article>
+
+            <article class="receta-steps-step">
+              <div class="receta-steps bg-primary-2">
+                <p>4</p>
+              </div>
+              <p class="col-10">
+                Cuando esté bien dorado, sacamos la bandeja del horno, le damos la vuelta a las piezas. Así, se cocinará
+                el otro lado.
+              </p>
+            </article>
+
+            <article class="receta-steps-step">
+              <div class="receta-steps bg-primary-2">
+                <p>5</p>
+              </div>
+              <p class="col-10">
+                Inmediatamente después, volvemos a meter la bandeja dentro del horno. Finalmente dejamos cocinar
+                aproximadamente el mismo tiempo, hasta que todo quede bien cocinado.
+              </p>
+            </article>
+          </section>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/MODALES-->
+
+
+
+  <footer>
+    <script>
+      $(function () { $("footer").load("footer.html") });
+    </script>
+  </footer>
+
+
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+</body>
+
+</html>

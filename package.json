@@ -1,0 +1,19 @@
+{
+  "name": "shio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap-icons": "^1.7.0",
+    "bootstrap-select": "^1.13.18"
+  }
+}

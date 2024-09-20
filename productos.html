@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/myjs.js"></script>
+    <link rel="icon" href="assets/logo shio white.svg">
+  <title>Nuestras sales</title>
+</head>
+<body class="bodymarginless">
+    
+<!--Header-->
+<header class="header desktop">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-end mt-4 py-3 container-nav container rounded-pill bg-primary-4">
+      <div class=" container-lg">
+        <a href="index.html">
+            <img src="assets/logo shio white.svg" alt="SHIO" class="navbar-brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+          <ul class="navbar-nav mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link px-4 active"  href="productos.html">productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="nosotros.html">nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="recetas.html">recetas</a>
+            </li>
+          </ul>
+            <a class="nav-link ps-4 p-0" href="comprar.html">
+                <button type="button" class="navbtn btn bg-white text-primary-4 px-5 rounded-pill text-uppercase" data-mdb-ripple-color="#ffffff">comprar</button>
+            </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!--/Header-->
+
+
+  <!--Header-->
+  <header class="header tablet-mobile">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-end mt-4 py-3 container-nav container bg-primary-4">
+      <div class=" container-xl">
+        <a href="index.html">
+          <img src="assets/logo shio white.svg" alt="SHIO" class="navbar-brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+          <ul class="navbar-nav mt-4 text-center">
+            <li class="nav-item">
+              <a class="nav-link px-4 active" href="productos.html">productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="nosotros.html">nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 " href="recetas.html">recetas</a>
+            </li>
+            <a class="nav-link" href="comprar.html">
+              <button type="button" class="navbtn btn bg-white text-primary-4 px-5 rounded-pill text-uppercase"
+                data-mdb-ripple-color="#ffffff">comprar</button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--/Header-->
+
+<div class="banner-productos tablet-mobile">
+    <img src="assets/imgs/sales/DSCN5212f.jpg" alt="Sales shio">
+
+</div>
+<div class="container-xl ">
+    <div class="banner-productos">
+        <img class="desktop" src="assets/imgs/sales/DSCN5212f.jpg" alt="Sales shio">
+    </div>
+    <section class="section pb-0">
+        <div class="row mb-5 justify-content-between">
+            <div class="col-12 col-sm-8 mb-4 mb-sm-0">
+                <h3 class="d-inline">Nuestros productos</h3>
+                <p class="special-text-2">(12)</p>
+            </div>
+            <div class="col-11 col-sm-4">
+                <form id="app-cover" class="desktop"> 
+                    <div id="select-box">
+                            <input type="checkbox" id="options-view-button" class="selectpicker form-select form-select-dropdown mb-3 rounded-pill shadow-sm border-0">
+                            <div id="select-button" class="brd selectpicker form-select form-select-dropdown mb-3 rounded-pill shadow-sm border-0">
+                                    <div id="selected-value">
+                                        <span>Ideal para</span>
+                                    </div>
+                            </div>
+                            <div id="options">
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="panes">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="panes">
+                                            <span class="label">todas las comidas</span>
+                                            <span class="opt-val">todas las comidas</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="panes">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="panes">
+                                            <i class="icon-panes"></i>
+                                            <span class="label">panes</span>
+                                            <span class="opt-val">panes</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="quesos">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="quesos">
+                                            <i class="icon-quesos"></i>
+                                            <span class="label">quesos</span>
+                                            <span class="opt-val">quesos</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="pollo">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="pollo">
+                                            <i class="icon-pollo"></i>
+                                            <span class="label">pollo</span>
+                                            <span class="opt-val">pollo</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="carnes">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="carnes">
+                                            <i class="icon-carnes"></i>
+                                            <span class="label">carnes</span>
+                                            <span class="opt-val">carnes</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="ensaladas">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="ensaladas">
+                                            <i class="icon-ensaladas"></i>
+                                            <span class="label">ensaladas</span>
+                                            <span class="opt-val">ensaladas</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="verduras">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="verduras">
+                                            <i class="icon-verduras"></i>
+                                            <span class="label">verduras</span>
+                                            <span class="opt-val">verduras</span>
+                                    </div>
+                                    <div id="option-bg"></div>
+                            </div>
+                    </div>
+            </form>
+
+                <form id="app-cover" class="tablet-mobile"> 
+                    <div id="select-box">
+                            <input type="checkbox" id="options-view-button" class="selectpicker form-select form-select-dropdown mb-3 rounded-pill shadow-sm border-0">
+                            <div id="select-button" class="brd selectpicker form-select form-select-dropdown mb-3 rounded-pill shadow-sm border-0">
+                                    <div id="selected-value">
+                                        <span>Ideal para</span>
+                                    </div>
+                            </div>
+                            <div id="options" class="tablet-mobile select-comidas">
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="panes">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="panes">
+                                            <span class="label">todas las comidas</span>
+                                            <span class="opt-val">todas las comidas</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="panes">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="panes">
+                                            <i class="icon-panes"></i>
+                                            <span class="label">panes</span>
+                                            <span class="opt-val">panes</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="quesos">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="quesos">
+                                            <i class="icon-quesos"></i>
+                                            <span class="label">quesos</span>
+                                            <span class="opt-val">quesos</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="pollo">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="pollo">
+                                            <i class="icon-pollo"></i>
+                                            <span class="label">pollo</span>
+                                            <span class="opt-val">pollo</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="carnes">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="carnes">
+                                            <i class="icon-carnes"></i>
+                                            <span class="label">carnes</span>
+                                            <span class="opt-val">carnes</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="ensaladas">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="ensaladas">
+                                            <i class="icon-ensaladas"></i>
+                                            <span class="label">ensaladas</span>
+                                            <span class="opt-val">ensaladas</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c s-c-white top" type="radio" name="platform" value="verduras">
+                                            <input class="s-c s-c-white bottom" type="radio" name="platform" value="verduras">
+                                            <i class="icon-verduras"></i>
+                                            <span class="label">verduras</span>
+                                            <span class="opt-val">verduras</span>
+                                    </div>
+                                    <div id="option-bg"></div>
+                            </div>
+                    </div>
+            </form>
+                <!--Selec w/icons
+                    <select id="mySelect" data-show-content="true" class="form-control">
+                        <option>Select..</option>
+                        <option data-content="<i class='bi-alarm'></i> Cutlery"></option>
+                        <option data-content="<i class='fa fa-eye'></i> Eye"></option>
+                        <option data-content="<i class='fa fa-heart-o'></i> Heart"></option>
+                        <option data-content="<i class='fa fa-leaf'></i> Leaf"></option>
+                        <option data-content="<i class='fa fa-music'></i> Music"></option>
+                        <option data-content="<i class='fa fa-star'></i> Star"></option>
+                        <option data-content="<span class='badge badge-warning mt-1 ml-2 float-right'>3</span> More"></option>
+                    </select>
+                    /Selec w/icons-->
+            </div>
+        </div>
+        
+        <div class="row productos text-center gy-6">
+            <article class="col-4 col-md-3 sal">
+                <a href="detalle.html">
+                    <div class="card bg-transparent hover-zoom  m-auto">
+                        <img src="assets/imgs/sales/NARANJA.png" alt="sal de">
+                        <p>Sal de naranja hierbas y ajo</p>
+                    </div>
+                </a>
+            </article>
+            <article class="col-4 col-md-3 sal">
+                <a href="detalle.html">
+                    <div class="card bg-transparent hover-zoom  m-auto">
+                        <img src="assets/imgs/sales/AZUL.png" alt="sal de">
+                        <p>Sal de mostaza y romero</p>
+                    </div>
+                </a>
+            </article>
+            <article class="col-4 col-md-3 sal">
+                <a href="detalle.html">
+                    <div class="card bg-transparent hover-zoom  m-auto">
+                        <img src="assets/imgs/sales/BLANCA.png" alt="sal de">
+                        <p>Sal de ajo y cebolla</p>
+                    </div>
+                </a>
+            </article>
+            <article class="col-4 col-md-3 sal">
+                <a href="detalle.html">
+                    <div class="card bg-transparent hover-zoom  m-auto">
+                        <img src="assets/imgs/sales/ROJO F.png" alt="sal de">
+                        <p>Sal de pimentón ahumado y ají</p>
+                    </div>
+                </a>
+            </article>
+            <article class="col-4 col-md-3 sal">
+                <a href="detalle.html">
+                    <div class="card bg-transparent hover-zoom  m-auto">
+                        <img src="assets/imgs/sales/VERDE.png" alt="sal de">
+                        <p>Sal de hierbas</p>
+                    </div>
+                </a>
+            </article>
+            <article class="col-4 col-md-3 sal">
+                <a href="detalle.html">
+                    <div class="card bg-transparent hover-zoom  m-auto">
+                        <img src="assets/imgs/sales/ROSADA.png" alt="sal de">
+                        <p>Sal de curry y sésamo</p>
+                    </div>
+                </a>
+            </article>
+            <article class="col-4 col-md-3 sal">
+                <a href="detalle.html">
+                    <div class="card bg-transparent hover-zoom  m-auto">
+                        <img src="assets/imgs/sales/AMARILLO.png" alt="sal de">
+                        <p>Sal de pimienta y limón</p>
+                    </div>
+                </a>
+              </article>
+              <article class="col-4 col-md-3 sal">
+                  <a href="detalle.html">
+                      <div class="card bg-transparent hover-zoom  m-auto">
+                          <img src="assets/imgs/sales/CELESTE.png" alt="sal de">
+                          <p>Sal de jengibre y ajo</p>
+                      </div>
+                  </a>
+              </article>
+            <article class="col-4 col-md-3 sal">
+                <a href="detalle.html">
+                    <div class="card bg-transparent hover-zoom  m-auto">
+                        <img src="assets/imgs/sales/ROJO C.png" alt="sal de">
+                        <p>Sal de tomate asado</p>
+                    </div>
+                </a>
+            </article>
+            <article class="col-4 col-md-3 sal">
+                <a href="detalle.html">
+                    <div class="card bg-transparent hover-zoom  m-auto">
+                        <img src="assets/imgs/sales/NEGRO.png" alt="sal de">
+                        <p>Sal de hongos y trufa</p>
+                    </div>
+                </a>
+            </article>
+            <article class="col-4 col-md-3 sal">
+                <a href="detalle.html">
+                    <div class="card bg-transparent hover-zoom  m-auto">
+                        <img src="assets/imgs/sales/GRIS.png" alt="sal de">
+                        <p>Sal marina con hongos y trufas </p>
+                    </div>
+                </a>
+            </article>
+            <article class="col-4 col-md-3 sal">
+                <a href="detalle.html">
+                  <div class="proximamente">
+                    <div class="card bg-transparent hover-zoom  m-auto o-50">
+                        <img src="assets/imgs/sales/PURPURA.png" alt="sal de">
+                        <p>Sal de malbec</p>
+                    </div>
+                    
+                  </div>
+                </a>
+            </article>
+            
+         </div>
+    </section>
+</div>
+
+    <!--Footer-->
+    <footer>
+      <script> 
+      $(function(){ $("footer").load("footer.html") });
+    </script>
+    </footer>
+  <!--/Footer-->
+
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>

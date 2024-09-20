@@ -1,0 +1,32 @@
+node_modules
+dist
+dist-ssr
+*.local
+
+sass
+.sass-cache
+
+package.zip
+
+# Editor directories and files
+.vscode
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore all SVG files in the icons directory
+assets/bootstrap-icons/icons/*.svg
+
+# Do not ignore caret-up.svg
+!assets/bootstrap-icons/icons/chevron-up.svg
+!assets/bootstrap-icons/icons/chevron-right.svg
+!assets/bootstrap-icons/icons/plus.svg
+!assets/bootstrap-icons/icons/instagram.svg
+!assets/bootstrap-icons/icons/search.svg
+!assets/bootstrap-icons/icons/trash.svg
+!assets/bootstrap-icons/icons/clock.svg

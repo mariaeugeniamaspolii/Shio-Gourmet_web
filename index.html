@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/myjs.js"></script>
+    <link rel="icon" href="assets/logo shio white.svg">
+    <title>Shio Gourmet</title>
+</head>
+<body class="mt-0">
+    
+<!--Header-->
+<header class="header desktop">
+    <nav class="nav-change navbar navbar-expand-lg navbar-dark fixed-top justify-content-end mt-4 py-3 container rounded-pill bg-primary-2">
+      <div class=" container-xl">
+        <a href="index.html">
+            <img src="assets/logo shio white.svg" alt="SHIO" class="navbar-brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+          <ul class="navbar-nav mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link px-4 o-100"  href="productos.html">productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="nosotros.html">nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="recetas.html">recetas</a>
+            </li>
+          </ul>
+            <a class="nav-link ps-4 p-0" href="comprar.html">
+                <button type="button" class="navbtn btn px-5 rounded-pill text-uppercase text-primary-2 bg-secondary-4">comprar</button>
+            </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!--/Header-->
+
+
+  <!--Header-->
+  <header class="header tablet-mobile">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-end mt-4 py-3 container-nav container bg-primary-2">
+      <div class=" container-xl">
+        <a href="index.html">
+          <img src="assets/logo shio white.svg" alt="SHIO" class="navbar-brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+          <ul class="navbar-nav mt-4 text-center">
+            <li class="nav-item">
+              <a class="nav-link px-4" href="productos.html">productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="nosotros.html">nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 " href="recetas.html">recetas</a>
+            </li>
+            <a class="nav-link" href="comprar.html">
+              <button type="button" class="navbtn btn bg-white text-primary-4 px-5 rounded-pill text-uppercase"
+                data-mdb-ripple-color="#ffffff">comprar</button>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--/Header-->
+
+  <!--Banner-->
+  <section class="banner-image banner-image-home w-100 vh-85 d-flex align-items-end">
+    <div class="banner-content container-xl">
+      <h1 class="text-white mb-4">Una pizca es todo lo que necesitas!</h1>
+      <h5 class="text-white">Sumérgete en nuestra amplia variedad de sabores</h5>
+      <a href="productos.html">
+
+        <button type="button" class="text-white btn-primary-1 btn-lg btn-full rounded-pill my-6" data-mdb-ripple-color="#ffffff">Ver sales</button>
+      </a>
+    </div>
+  </section>
+  <!--/Banner-->
+  
+  
+  <!--Top 3-->
+    <div class=" container-xl p-4">
+      <section class="section row gx-3">
+        <div class="title">
+          <h3>Sus favoritas</h3>
+          <h5 class="subtitle">Las sales más usadas en sus recetas!</h5>
+        </div>
+        <article class="col-4 text-center">
+          <a href="detalle.html">
+          <div class="sal-naranja rounded-3 hover-zoom-parent">
+            <img src="assets/imgs/sales/NARANJA.png" class="vh-30 hover-zoom-child">
+          </div>
+          </a>
+        </article>
+        <article class="col-4 text-center">
+          <a href="detalle.html">
+          <div class="sal-verde rounded-3 hover-zoom-parent">
+            <img src="assets/imgs/sales/VERDE.png" class="vh-30 hover-zoom-child">
+          </div>
+          </a>
+        </article>
+        <article class="col-4 text-center">
+          <a href="detalle.html">
+          <div class="sal-amarillo rounded-3 hover-zoom-parent">
+            <img src="assets/imgs/sales/AMARILLO.png" class="vh-30 hover-zoom-child">
+          </div>
+          </a>
+        </article>
+      </section>
+      </div>
+  <!--/Top 3-->
+  
+  
+  <!--Receta de la semana-->
+  <section class="section destacado g-0">
+    <div class=" container-xl p-4">
+
+    <h3 class="title">Receta de la semana</h3>
+    </div>
+        <a href="recetas.html" data-target="#modalReceta" data-toggle="modal" class="hover-zoom-parent">
+          <img src="assets/imgs/chicken 2.jpg" alt="imagen receta" class="vh-50 w-100 img-receta">
+          <img src="assets/imgs/sales/AZUL.png" alt="sal" id="sal-receta" class="hover-zoom-child img-fluid">
+          
+    <div class=" container-xl p-4">
+          <div class="bg-primary-2 titulo-receta d-flex align-items-center mt-4">
+            <h4 class="text-white fw-bold p-4 mb-0">Pollo al horno con sal de mostaza y romero</h4>
+            <i class="bi bi-chevron-right fw-bold fs-5 text-white"></i>
+          </div>
+    </div>
+        </a>
+  </section>
+  <!--/Receta de la semana-->
+  
+  
+  <!--Donde comprar-->
+  <div class=" container-xl p-4">
+    <section class="section pb-0 row d-flex ">
+    <h3 class="title">¿Dónde comprar?</h3>
+    <div class="col-12 rounded-3">
+
+      <div class="gmap_canvas">
+          <iframe class="w-100 vh-50" src="https://www.google.com/maps/d/u/0/embed?mid=1caMURQCSAt0I2f7r_CcsA1hR4eqn2yUU"></iframe>
+      </div>
+    </div>   
+  </div>
+
+  </section>
+</div>
+  <!--/Donde comprar-->
+  
+  
+  <!--Footer-->
+  <footer>
+    <script> 
+    $(function(){ $("footer").load("footer.html") });
+  </script>
+  </footer>
+  <!--/Footer-->
+
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+
+</body>
+</html>
